@@ -19,11 +19,13 @@ The second notebook, modeling forecast, will examine the forecasting of innovati
 
 Identify standard products that closely align with the characteristics of the specified innovative products and utilize the sales data of these analogous products to forecast future sales.
 
-**Selection of Comparable Products** Choose products that most closely match the innovative items in terms of brand, market category, manufacturer, package type, and flavor, ensuring they align closely with the specifications of the new products.
+**Selection of Comparable Products -** Choose the products that most closely match the innovative items in terms of brand, market category, manufacturer, package type, and flavor, ensuring they align closely with the specifications of the new products.
 
-**Sales Data Analysis** Examine the weekly sales figures of these selected similar products to understand their market performance over time.
+**Data Integration -** Filtered the dataset based on seven new innovative products and filtered it based on demographics like age and region.
 
-**Forecast Modeling** I used time series forecasting models of ARIMA, Prophet, and Exponential smoothing to predict future sales. I used the Mean Squared Error (MSE) and Mean Absolute Error (MAE) metrics to evaluate the best-performing model. 
+**Sales Data Analysis -** Examined the weekly sales figures of these selected similar products to understand their market performance over time.
+
+**Forecast Modeling -** I used ARIMA, Prophet, and Exponential smoothing time series forecasting models to predict future sales. I used the Mean Squared Error (MSE) and Mean Absolute Error (MAE) metrics to evaluate the best-performing model. 
 
 In addition, I used the non-Swire's competitive data to forecast their sales of similar products, analyze their performance when compared to Swire's products, and compare both sales to identify patterns and public sentiments.
 
@@ -35,51 +37,51 @@ Similar existing products were identified to align closely with Swire Coca-Cola�
 
 ## Business Value
 
-**Optimal Launch Strategy** The forecasting model developed for Swire Coca-Cola identifies the most favorable periods and regions for introducing specific innovative products. This strategic insight allows for an effective market entry, maximizing initial impact, long-term success, and customer satisfaction.
+**Optimal Launch Strategy -** The forecasting model developed for Swire Coca-Cola identifies the most favorable periods and regions for introducing specific innovative products. This strategic insight allows for an effective market entry, maximizing initial impact, long-term success, and customer satisfaction.
 
-**Enhanced Inventory Management** The model significantly aids inventory management by predicting demand more accurately. This helps Swire Coca-Cola optimize its stock levels, thereby reducing costs associated with excess inventory and minimizing the risk of product wastage.
+**Enhanced Inventory Management -** The model significantly aids inventory management by predicting demand more accurately. This helps Swire Coca-Cola optimize its stock levels, thereby reducing costs associated with excess inventory and minimizing the risk of product wastage.
 
-**Insightful Product Analysis** The analysis delivers valuable insights into Swire Coca-Cola’s most robust product offerings and aligns them with effective inventory management practices. This ensures that the best-performing products are adequately stocked and promoted, enhancing overall profitability.
+**Insightful Product Analysis -** The analysis delivers valuable insights into Swire Coca-Cola’s most robust product offerings and aligns them with effective inventory management practices. This ensures that the best-performing products are adequately stocked and promoted, enhancing overall profitability.
 
-**Targeted Marketing Strategies** The project provides detailed information on the most responsive age groups and ideal climatic conditions for Swire Coca-Cola’s flavored drinks. This enables the company to design marketing strategies that are highly targeted and more likely to resonate with their intended audience.
+**Targeted Marketing Strategies -** The project provides detailed information on the most responsive age groups and ideal climatic conditions for Swire Coca-Cola’s flavored drinks. This enables the company to design marketing strategies that are highly targeted and more likely to resonate with their intended audience.
 
-**Competitive Analysis** By comparing the sales performance of Swire Coca-Cola’s products against their competitors, the analysis offers a clear perspective on market position and competitive strengths. This allows Swire Coca-Cola to identify product improvement and innovation areas, enhancing its competitive edge in the marketplace.
+**Competitive Analysis -** By comparing the sales performance of Swire Coca-Cola’s products against their competitors, the analysis offers a clear perspective on market position and competitive strengths. This allows Swire Coca-Cola to identify product improvement and innovation areas, enhancing its competitive edge in the marketplace.
 
 ## Challenges
 
-**Dataset** The dataset doesn't include data specific to the innovative product categories of interest. So, predicting future sales with a dataset that has yet to describe the innovative products is quite challenging. Careful consideration is required to approximate the attributes of these innovative products by analyzing similar existing products within comparable categories.
+**Dataset -** The dataset doesn't include data specific to the innovative product categories of interest. So, predicting future sales with a dataset that has yet to describe the innovative products is quite challenging. Careful consideration is required to approximate the attributes of these innovative products by analyzing similar existing products within comparable categories.
 
-**Time Series** Selecting an appropriate time series model for forecasting sales is inherently complex due to the nuances of historical sales data. We employed various popular time series models and assessed their performance using Mean Absolute Error (MAE) and Mean Squared Error (MSE) metrics to ensure robust evaluation.
+**Time Series -** Selecting an appropriate time series model for forecasting sales is inherently complex due to the nuances of historical sales data. We employed various popular time series models and assessed their performance using Mean Absolute Error (MAE) and Mean Squared Error (MSE) metrics to ensure robust evaluation.
 
-**Data Integration** Combining data from demographic and sales datasets presents challenges, particularly with the large volume of data that can lead to potential duplication. We utilized Google Big Query to manage and scrutinize data for duplicity efficiently, ensuring the integrity of our data integration process.
+**Data Integration -** Combining data from demographic and sales datasets presents challenges, particularly with the large volume of data that can lead to potential duplication. We utilized Google Big Query to manage and scrutinize data for duplicity efficiently, ensuring the integrity of our data integration process.
 
-**Confidence Intervals** Given the uncertainties in correctly identifying the products within the dataset, it is crucial to establish confidence intervals for the sales forecasts. These intervals provide a range for potential high and low sales figures, accommodating the variability and enhancing the reliability of our predictions.
+**Confidence Intervals -** Given the uncertainties in correctly identifying the products within the dataset, it is crucial to establish confidence intervals for the sales forecasts. These intervals provide a range for potential high and low sales figures, accommodating the variability and enhancing the reliability of our predictions.
 
-**Computation Power** The substantial dataset size demands significant computational resources, which has previously led to system instability and crashes. To mitigate this, we have implemented cloud-based GPUs to handle the extensive computations required.
+**Computation Power -** The substantial dataset size demands significant computational resources, which has previously led to system instability and crashes. To mitigate this, we have implemented cloud-based GPUs to handle the extensive computations required.
 
-**Validation** Due to our reliance on similar products as proxies for the innovative products in our analysis, direct validation of model outputs is not feasible.  We will devise a validation methodology incorporating probability distributions and confidence intervals to circumvent this limitation. This approach will enable us to provide reliable estimates despite the absence of direct data on the innovative products.
+**Validation -** Due to our reliance on similar products as proxies for the innovative products in our analysis, direct validation of model outputs is not feasible.  We will devise a validation methodology incorporating probability distributions and confidence intervals to circumvent this limitation. This approach will enable us to provide reliable estimates despite the absence of direct data on the innovative products.
 
 ## Lessons Learned
 
-**Dataset Attribute Analysis** Understanding the attributes within the dataset to select products that closely mirror innovative ones accurately.
+**Dataset Attribute Analysis -** Understanding the attributes within the dataset to select products that closely mirror innovative ones accurately.
 
-**Data Management via Google Big Query** Using Google Big Query to effectively manage and filter the extensive dataset, transferring refined data to Google Colab for further analysis.
+**Data Management via Google Big Query -** Using Google Big Query to effectively manage and filter the extensive dataset, transferring refined data to Google Colab for further analysis.
 
-**Time-Series Forecasting Proficiency** Developed a deep understanding of time-series forecasting, using MSE and MAE metrics to optimize model selection and enhance forecast accuracy.
+**Time-Series Forecasting Proficiency -** Developed a deep understanding of time-series forecasting, using MSE and MAE metrics to optimize model selection and enhance forecast accuracy.
 
-**Seasonal Sales Understanding** Learned insights into the seasonal trends and their impact on product sales.
+**Seasonal Sales Understanding -** Learned insights into the seasonal trends and their impact on product sales.
 
-**Influence of Reviews and Tastes** Recognized how consumer reviews and product taste preferences affect sales outcomes.
+**Influence of Reviews and Tastes -** Recognized how consumer reviews and product taste preferences affect sales outcomes.
 
-**Demographics on Sales** Demographics (regional, climatic, age, and ethnic demographics) influence beverage sales, adding the need for demographic considerations in sales strategies.
+**Demographics on Sales -** Demographics (regional, climatic, age, and ethnic demographics) influence beverage sales, adding the need for demographic considerations in sales strategies.
 
-**Engagement with Industry-Specific Datasets** Extensive understanding of real-world, industry-specific datasets and application of business-oriented problem-solving techniques.
+**Engagement with Industry-Specific Datasets -** Extensive understanding of real-world, industry-specific datasets and application of business-oriented problem-solving techniques.
 
-**Computational Effectiveness** Learned cloud-based GPUs to manage high computational demands efficiently, improving system stability and performance.
+**Computational Effectiveness -** Learned cloud-based GPUs to manage high computational demands efficiently, improving system stability and performance.
 
-**Translation of Analytics to Business Results** Knowledge of converting analytical insights into concrete business outcomes, reinforcing the strategic value of data-driven decisions.
+**Translation of Analytics to Business Results -** Knowledge of converting analytical insights into concrete business outcomes, reinforcing the strategic value of data-driven decisions.
 
-**Navigating Industry Complexities** Acknowledged and adapted to the complexities and uncertainties in beverage sales, underlining the importance of flexibility and informed decision-making in the industry.
+**Navigating Industry Complexities -** Acknowledged and adapted to the complexities and uncertainties in beverage sales, underlining the importance of flexibility and informed decision-making in the industry.
 
 
 **[EDA Notebook](https://github.com/AbhiramMannam/Swire-Coca-Cola-Forecast/blob/main/Capstone_Completion_EDA.ipynb)**
@@ -89,6 +91,8 @@ Similar existing products were identified to align closely with Swire Coca-Cola�
 **[Presentation](https://github.com/AbhiramMannam/Swire-Coca-Cola-Forecast/blob/main/Swire_Innovators_Capstone%20Presentation.pdf)**
 
 **[Award](https://github.com/AbhiramMannam/Swire-Coca-Cola-Forecast/blob/main/Abhiram%20Mannam%20Spring%202024%20MSBA.pdf)**
+
+**[Website](https://swirewebsite-kxgpyieata-wm.a.run.app/)**
 
 
 
