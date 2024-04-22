@@ -1,21 +1,31 @@
 # Master of Science Business Analytics - Capstone - Swire Coca-Cola Innovative Products Forecasting
 
-
 ## Business Problem
 
-Swire Coca-Cola, USA, is responsible for producing, selling, and distributing Coca-Cola and various beverages across 13 states in the American West. The company is committed to continuously introducing innovative products into the market. These innovative products are designed to align with the discerned preferences and loyalty of the customers, but sometimes, they fail. Swire aims to enhance its production planning and management specifically for these innovative products. The primary challenge requires forecasting the demand to mitigate instances of out-of-stock or overproduction of these innovative products, thereby maximizing profits.
+Swire Coca-Cola, USA, is responsible for producing, selling, and distributing Coca-Cola and various beverages across 13 states in the American West. The company is committed to continuously introducing innovative products into the market. These innovative products are designed to align with the discerned preferences and loyalty of the customers, but sometimes, they fail. 
+
+Swire Coca-Cola encountered significant production and inventory management challenges for its new innovative products, Starlight and Dreamworld, which each exhibited distinct sales patterns requiring enhanced forecasting and strategic planning. For Starlight, robust sales persisted for 30 weeks, followed by a decline due to supply shortages. This issue hindered the company from capitalizing on the intense media support and public interest that could have further boosted sales. Conversely, Dreamworld experienced a sharp initial sales peak, quickly diminishing after 14 weeks. This decline was not attributed to supply chain issues but to overproduction based on overly optimistic demand forecasts, leading to excessive inventory and consequent financial losses.
+
+Swire plans to release seven new innovative products. The main aim is to enhance its production planning and management specifically for these innovative products. The primary challenge requires forecasting the demand to mitigate instances of out-of-stock or overproduction of these innovative products, thereby maximizing profits.
 
 ## Solution
 
-This problem can be addressed in multiple approaches:
+The first notebook, EDA, will examine Swire Coca-Cola's Exploration Data Analysis with data explorations, insights, and visualizations.
+Utilize the Exploratory Data Analysis (EDA) to thoroughly examine the product's sales data, identifying key insights such as peak sales periods and notable seasonal trends. This detailed analysis will help uncover patterns and fluctuations in sales that are crucial for strategic planning and decision-making. 
 
-1.	Identify regular products that closely resemble the specified innovative products and forecast sales by leveraging the sales data of these similar products.
--	Determine the most relevant similar products based on factors such as brand, market category, manufacturer, package type, and/or flavor, matching the specifications of the specified innovative products.
--	Analyze the weekly sales figures for similar products.
--	Aggregate the sales data of these products to predict the sales of the innovative products.
+Additionally, Exploratory Data Analysis (EDA) facilitates understanding why certain regions exhibit higher sales by analyzing the demographic dataset and establishing correlations between demographic factors and product preferences. This process helps identify which product categories or flavors perform well in sales and regions. This can help in targeting the distribution regions.
 
+The second notebook, modeling forecast, will examine the forecasting of innovative products.
 
-2.	Another method involves segmenting the success of regular products according to demographics and regions. By identifying patterns and public sentiments, we can analyze the weekly sales of these specific items within those regions. This sentiment analysis will forecast the sales of these specified innovative products.
+Identify standard products that closely align with the characteristics of the specified innovative products and utilize the sales data of these analogous products to forecast future sales.
+
+**Selection of Comparable Products** Choose products that most closely match the innovative items in terms of brand, market category, manufacturer, package type, and flavor, ensuring they align closely with the specifications of the new products.
+
+**Sales Data Analysis** Examine the weekly sales figures of these selected similar products to understand their market performance over time.
+
+**Forecast Modeling** I used time series forecasting models of ARIMA, Prophet, and Exponential smoothing to predict future sales. I used the Mean Squared Error (MSE) and Mean Absolute Error (MAE) metrics to evaluate the best-performing model. 
+
+In addition, I used the non-Swire's competitive data to forecast their sales of similar products, analyze their performance when compared to Swire's products, and compare both sales to identify patterns and public sentiments.
 
 ## Contribution
 
