@@ -10,24 +10,23 @@ Swire plans to release seven new innovative products. The main aim is to enhance
 
 ## Solution
 
-The first notebook, EDA, examined Swire Coca-Cola's Exploration Data Analysis with data explorations, insights, and visualizations.
-The Exploratory Data Analysis (EDA) was used to thoroughly examine the product's sales data, identifying key insights such as peak sales periods and notable seasonal trends. This detailed analysis will help uncover patterns and fluctuations in sales that are crucial for strategic planning and decision-making. 
+The first notebook, "EDA," examined Swire Coca-Cola's Exploratory Data Analysis, focusing on data exploration, insights, and visualizations. The EDA thoroughly examined the product's sales data, identifying key insights such as peak sales periods and notable seasonal trends. This detailed analysis will help uncover patterns and fluctuations in sales, crucial for strategic planning and decision-making.
 
-Additionally, Exploratory Data Analysis (EDA) facilitates understanding why certain regions exhibit higher sales by analyzing the demographic dataset and establishing correlations between demographic factors and product preferences. This process helps identify which product categories or flavors perform well in sales and regions. This can help in targeting the distribution regions.
+Additionally, Exploratory Data Analysis (EDA) facilitates understanding why certain regions exhibit higher sales by analyzing the demographic dataset and establishing correlations between demographic factors and product preferences. This process helps identify which product categories or flavors perform well in sales across various regions, aiding in targeting distribution efforts effectively.
 
-The second notebook, modeling forecast, examined the forecasting of innovative products.
+The second notebook, "Modeling Forecast," focused on forecasting innovative products.
 
-Identify standard products that closely align with the characteristics of the specified innovative products and utilize the sales data of these analogous products to forecast future sales.
+Standard products that closely align with the characteristics of the specified innovative products were identified to forecast future sales, utilizing the sales data of these analogous products.
 
-**Selection of Comparable Products -** Choose the products that most closely match the innovative items in terms of brand, market category, manufacturer, package type, and flavor, ensuring they align closely with the specifications of the new products.
+**Selection of Comparable Products -** Products were selected that closely match the innovative items in terms of brand, market category, manufacturer, package type, and flavor, ensuring they align closely with the specifications of the new products.
 
-**Data Integration -** Filtered the dataset based on seven new innovative products and filtered it based on demographics like age and region.
+**Data Integration -** The dataset was filtered to focus on seven new innovative products and further refined by demographics such as age and region.
 
-**Sales Data Analysis -** Examined the weekly sales figures of these selected similar products to understand their market performance over time.
+**Sales Data Analysis -** The weekly sales figures of these similar products were examined to understand their market performance over time.
 
-**Forecast Modeling -** I used ARIMA, Prophet, and Exponential smoothing time series forecasting models to predict future sales. I used the Mean Squared Error (MSE) and Mean Absolute Error (MAE) metrics to evaluate the best-performing model. 
+**Forecast Modeling -** I used ARIMA, Prophet, and Exponential Smoothing time series forecasting models to predict future sales. The models were evaluated using Mean Squared Error (MSE) and Mean Absolute Error (MAE) metrics to determine the best-performing model.
 
-In addition, I used the non-Swire's competitive data to forecast their sales of similar products, analyze their performance when compared to Swire's products, and compare both sales to identify patterns and public sentiments.
+Additionally, I utilized non-Swire competitive data to forecast their sales of similar products, analyze their performance compared to Swire's products, and compare both sales to identify patterns and public sentiments.
 
 ## Contribution
 
