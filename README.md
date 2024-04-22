@@ -6,7 +6,7 @@ Swire Coca-Cola, USA, is responsible for producing, selling, and distributing Co
 
 Swire Coca-Cola has encountered significant production and inventory management challenges with its new innovative products, Starlight and Dreamworld, each exhibiting distinct sales patterns that require enhanced forecasting and strategic planning. For Starlight, robust sales persisted for 30 weeks, followed by a decline due to supply shortages. This issue hindered the company's ability to capitalize on intense media support and public interest that could have further boosted sales. Conversely, Dreamworld experienced a sharp initial sales peak, quickly diminishing after just 14 weeks. This decline was not attributed to supply chain issues but to overproduction based on overly optimistic demand forecasts, leading to excessive inventory and consequent financial losses.
 
-Swire plans to release seven new innovative products. The main aim is to enhance its production planning and management specifically for these innovative products. The primary challenge is accurately forecasting demand to mitigate out-of-stock situations or overproduction of these innovative products, thereby maximizing profits.
+Swire plans to release seven new innovative products. The main aim is to enhance its production planning and management specifically for these innovative products. The primary challenge is forecasting demand to mitigate out-of-stock situations or overproduction of these innovative products, thereby maximizing profits.
 
 ## Solution
 
