@@ -10,12 +10,12 @@ Swire plans to release seven new innovative products. The main aim is to enhance
 
 ## Solution
 
-The first notebook, EDA, will examine Swire Coca-Cola's Exploration Data Analysis with data explorations, insights, and visualizations.
-Utilize the Exploratory Data Analysis (EDA) to thoroughly examine the product's sales data, identifying key insights such as peak sales periods and notable seasonal trends. This detailed analysis will help uncover patterns and fluctuations in sales that are crucial for strategic planning and decision-making. 
+The first notebook, EDA, examined Swire Coca-Cola's Exploration Data Analysis with data explorations, insights, and visualizations.
+The Exploratory Data Analysis (EDA) was used to thoroughly examine the product's sales data, identifying key insights such as peak sales periods and notable seasonal trends. This detailed analysis will help uncover patterns and fluctuations in sales that are crucial for strategic planning and decision-making. 
 
 Additionally, Exploratory Data Analysis (EDA) facilitates understanding why certain regions exhibit higher sales by analyzing the demographic dataset and establishing correlations between demographic factors and product preferences. This process helps identify which product categories or flavors perform well in sales and regions. This can help in targeting the distribution regions.
 
-The second notebook, modeling forecast, will examine the forecasting of innovative products.
+The second notebook, modeling forecast, examined the forecasting of innovative products.
 
 Identify standard products that closely align with the characteristics of the specified innovative products and utilize the sales data of these analogous products to forecast future sales.
 
